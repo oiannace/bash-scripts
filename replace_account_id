@@ -1,2 +1,4 @@
 #!/bin/bash
-sed -i -e 's/$1/account_id/g' $2
+account_id=$1
+file_name=$2
+sed -i -e "s/$account_id/account_id/g" "$file_name"
